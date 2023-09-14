@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.vpnappclonelikeflutter.ui.theme.VpnAppCloneLikeFlutterTheme
+import com.example.vpnappclonelikeflutter.view.ScaffoldArea
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    ScaffoldArea()
                 }
             }
         }
@@ -34,6 +36,5 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     VpnAppCloneLikeFlutterTheme {
-        Greeting("Android")
     }
 }
