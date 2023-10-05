@@ -36,10 +36,10 @@ import com.example.vpnappclonelikeflutter.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomePageDrawer() {
-    ModalNavigationDrawer(
-        drawerContent = {
-            ModalDrawerSheet {
+fun HomePageDrawer(
+
+){
+
                 Row (horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically){
                     Box(modifier = Modifier
                         .size(100.dp)
@@ -158,9 +158,7 @@ fun HomePageDrawer() {
                     onClick = { /*TODO*/ }
                 )
                 // ...other drawer items
-            }
-        }
-    ) {
-        // Screen content
-    }
+
+
+
 }

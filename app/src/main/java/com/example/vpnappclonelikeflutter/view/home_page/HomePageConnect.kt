@@ -41,13 +41,14 @@ import com.example.vpnappclonelikeflutter.R
 @Composable
 fun HomePageConnect() {
     Scaffold(
+
         containerColor = Color(0xFF181818),
         topBar = {
             CenterAlignedTopAppBar(
                 colors = TopAppBarDefaults.largeTopAppBarColors(
                     containerColor = Color(0xFF333333),
 
-                ),
+                    ),
                 title = {
 
                 },
@@ -90,6 +91,7 @@ fun HomePageConnect() {
 
                 }
             )
+
         },
 
 
@@ -100,26 +102,35 @@ fun HomePageConnect() {
                 .padding(innerPadding),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Box(modifier = Modifier
-                .fillMaxSize()
-                .padding(), contentAlignment = Alignment.Center){
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(), contentAlignment = Alignment.Center
+            ) {
                 val imageRes = painterResource(id = R.drawable.circut)
-                Box(modifier = Modifier.fillMaxSize(),contentAlignment = Alignment.TopCenter){
-                    Image(painter = imageRes, contentDescription = null, modifier = Modifier.fillMaxSize())
+                Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
+                    Image(
+                        painter = imageRes,
+                        contentDescription = null,
+                        modifier = Modifier.fillMaxSize()
+                    )
 
                 }
 
-                Box(contentAlignment = Alignment.Center
-                    ){
-                    Button(onClick = { println("Connect button is here") }, modifier = Modifier
-                        .height(100.dp)
-                        .width(100.dp)
-                        .padding(top = 16.dp), colors = ButtonDefaults.buttonColors(containerColor = Color(0x00FFFFFF))) {
+                Box(
+                    contentAlignment = Alignment.Center
+                ) {
+                    Button(
+                        onClick = { println("Connect button is here") },
+                        modifier = Modifier
+                            .height(100.dp)
+                            .width(100.dp)
+                            .padding(top = 16.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0x00FFFFFF))
+                    ) {
 
                     }
                 }
-
-
 
 
             }

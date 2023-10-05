@@ -3,6 +3,7 @@ package com.example.vpnappclonelikeflutter
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -12,6 +13,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.vpnappclonelikeflutter.ui.theme.VpnAppCloneLikeFlutterTheme
 import com.example.vpnappclonelikeflutter.view.home_page.HomePageConnect
 import com.example.vpnappclonelikeflutter.view.home_page.HomePageDrawer
+import com.example.vpnappclonelikeflutter.view.home_page.WriteScafoold
+import com.example.vpnappclonelikeflutter.view.home_page.lan
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +26,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    HomePageDrawer()
-                    HomePageConnect()
+                    lan()
+//                        HomePageDrawer()
+//                        HomePageConnect()
+                        //bir daha ki gelişte bu ikisi aynı anda çalışmıyor buna bir çözüm bul
+
+
 
 
                 }
