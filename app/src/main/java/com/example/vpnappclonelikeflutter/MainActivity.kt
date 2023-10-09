@@ -11,9 +11,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.vpnappclonelikeflutter.ui.theme.VpnAppCloneLikeFlutterTheme
-import com.example.vpnappclonelikeflutter.view.home_page.HomePageConnect
-import com.example.vpnappclonelikeflutter.view.home_page.HomePageDrawer
-import com.example.vpnappclonelikeflutter.view.home_page.WriteScafoold
 import com.example.vpnappclonelikeflutter.view.home_page.lan
 
 class MainActivity : ComponentActivity() {
